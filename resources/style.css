@@ -1,0 +1,8 @@
+.headerStyle {
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+.headerStyle h2 {
+    margin-left: 20px;
+}
