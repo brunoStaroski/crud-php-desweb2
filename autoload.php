@@ -4,4 +4,8 @@
         if (file_exists($file)) {
             require_once $file;
         }
+        $services = $_SERVER["DOCUMENT_ROOT"].'/services/' . $className . '.php';
+        if (file_exists($services)) {
+            require_once $services;
+        }
     });
