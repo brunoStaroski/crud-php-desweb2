@@ -3,33 +3,25 @@
     include ("./templates/head.class.php");
     include ("./templates/body.class.php");
 
+    session_start();
+
     $head = new Head();
     echo $head->ReturnFullHead();
 
     $body = new Body();
 
+    $header = new Header();
+    $body->addElemento($header->ReturnFullHeader('headerStyle'));
 
+    $menu = new Menu();
+    $body->addElemento($menu->returnMenu());
 
     $mainDiv = new Main();
     $body->addElemento($mainDiv->returnMainDiv());
 
-    $menu = new Menu();
-    $body->addElemento($menu->returnMenu('menuStyle'));
-
-    $header = new Header();
-    $body->addElemento($header->ReturnFullHeader('headerStyle'));
-
-
-
-
-
-
-
-
-
-
-
     echo $body->ReturnBody();
+
+
 
 
 

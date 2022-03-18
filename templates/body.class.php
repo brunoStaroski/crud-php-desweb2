@@ -9,11 +9,14 @@
         }
 
         public function ReturnBody() {
-            $body = "<body> \n";
+            $body = "<body> \n
+                         \n
+                        <div class=\"container\"> \n";
                 foreach ($this->elementos as $itemElemento) {
-                    $body .= $itemElemento;
+                    $body .= $itemElemento . "\n";
                 }
-            $body .= "\n </body>";
+            $body .= "\n </div>
+                \n </body>";
             return $body;
 
         }

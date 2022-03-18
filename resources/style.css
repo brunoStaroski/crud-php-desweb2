@@ -2,30 +2,40 @@
     width: 100%;
     height: 20%;
     position: relative;
-    background-color: dodgerblue;
 }
 
 h3 {
     position: relative;
-    right: 115px;
-    bottom: 20px;
+    right: 135px;
+    bottom: 325px;
+    margin-left: 10px;
+    background-color: dodgerblue;
+    box-sizing: border-box;
+    border: 0px solid white;
+    padding: 15px 150% 15px 5px;
 }
 
 .menuStyle {
     position: relative;
     float: left;
-    top: 35px;
-    left: 10px;
+    top: 50px;
     border: 1px solid darkgray;
     width: 10%;
     margin-right: 0px;
 }
 
-#mainDiv {
+#mainDivListagem {
     width: 90%;
     position: relative;
-    top: 80px;
-    left: 150px;
+    bottom: 130px;
+    left: 100px;
     margin: 0px;
+}
 
+#mainDivCadastro {
+    width: 90%;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    margin: 0px;
 }

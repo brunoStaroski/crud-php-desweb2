@@ -1,21 +1,22 @@
 <?php
 
 class Menu {
-
-    //<td><a href="exclusao.php">Exclusão</a></td>
-
-    public function returnMenu($class) {
-        $service = new Service();
-        $listaMenu = $service->getMenu();
-        echo '<table class="'.$class.'">';
-        foreach ($listaMenu as $menuItem) {
-            echo '<tr>';
-            echo '<td><a href="'.$menuItem['acao'].'">'.$menuItem['texto'].'</a></td>';
-            echo '</tr>';
-        }
-        echo '</table>';
+    public function returnMenu() {
+        echo '
+                  <table class="table menuStyle">
+                    <tr>
+                        <td><a href="?pagina=listagem">Listagem</a></td> 
+                    </tr>
+                    <tr>
+                        <td><a href="?pagina=cadastro">Cadastro</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="?pagina=edicao">Edição</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="?pagina=excluir">Excluir</a></td>
+                    </tr>
+                  </table>
+                ';
     }
-
-
-
 }
